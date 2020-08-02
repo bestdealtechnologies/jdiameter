@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.mobicents.diameter</groupId>
     <artifactId>diameter-parent</artifactId>
-    <version>1.7.0-SNAPSHOT</version>
+    <version>1.7.1-bd</version>
   </parent>
 
   <groupId>org.mobicents.servers.diameter.guide</groupId>

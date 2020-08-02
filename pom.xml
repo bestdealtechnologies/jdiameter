@@ -10,7 +10,7 @@
 
   <groupId>org.mobicents.diameter</groupId>
   <artifactId>diameter-parent</artifactId>
-  <version>1.7.0-SNAPSHOT</version>
+  <version>1.7.1-bd</version>
 
   <packaging>pom</packaging>
 
@@ -105,6 +105,7 @@
       </plugin>
 
       <!-- Checkstyle -->
+      <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -130,7 +131,6 @@
               </module>
 
               <module name="RegexpSingleline">
-                <!-- \s matches whitespace character, $ matches end of line. -->
                 <property name="format" value="\s+$"/>
                 <property name="message" value="Line has trailing spaces."/>
               </module>
@@ -155,7 +155,6 @@
 
                 <module name="OneStatementPerLine"/>
 
-                <!-- Checks for imports                              -->
                 <module name="AvoidStarImport">
                   <property name="allowStaticMemberImports" value="true"/>
                 </module>
@@ -167,16 +166,11 @@
                   <property name="illegalPkgs" value="junit.framework"/>
                 </module>
 
-                <!-- Modifier Checks                                    -->
                 <module name="ModifierOrder"/>
                 <module name="RedundantModifier"/>
 
-                <!-- Checks for blocks. You know, those {}'s         -->
                 <module name="LeftCurly"/>
 
-                <!-- Checks for common coding problems               -->
-                <!-- Disabled until http://sourceforge.net/tracker/?func=detail&aid=2843447&group_id=29721&atid=397078 is fixed-->
-                <!--<module name="DoubleCheckedLocking"/>-->
                 <module name="EmptyStatement"/>
                 <module name="EmptyBlock">
                   <property name="option" value="TEXT"/>
@@ -185,7 +179,6 @@
                 <module name="EqualsHashCode"/>
                 <module name="IllegalInstantiation"/>
 
-                <!-- Miscellaneous other checks.                   -->
                 <module name="UpperEll"/>
                 <module name="PackageAnnotation"/>
                 <module name="CovariantEquals"/>
@@ -212,6 +205,7 @@
           </dependency>
         </dependencies>
       </plugin>
+      -->
       <plugin>
         <artifactId>maven-eclipse-plugin</artifactId>
         <groupId>org.mobicents.tools</groupId>
